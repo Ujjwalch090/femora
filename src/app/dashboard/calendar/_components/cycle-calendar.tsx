@@ -3,6 +3,7 @@
 import * as React from 'react';
 import { Calendar } from '@/components/ui/calendar';
 import { addDays, startOfMonth, getDaysInMonth, isSameDay, isBefore, isAfter, format } from 'date-fns';
+import { cn } from '@/lib/utils'; // Import the cn function
 
 // Define phase types
 type Phase = 'menstrual' | 'follicular' | 'ovulation' | 'luteal' | 'predicted_period';
